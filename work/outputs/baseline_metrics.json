@@ -1,0 +1,28 @@
+{
+  "task": "ML-07 Baseline Action Score",
+  "lane": "Lane 2 \u2014 Refresh / Content Opportunity Scoring",
+  "dataset_rows": 30000,
+  "base_decline_rate": 0.5421,
+  "rule": {
+    "name": "Stale Visible Refresh Rule",
+    "formula": "(days_since_last_update >= 180) * (impressions_90d >= 500) * impressions_90d",
+    "reason_code": "stale_visible_page",
+    "action_label": "refresh",
+    "unflagged_action_label": "monitor"
+  },
+  "signal_verdicts": {
+    "days_since_last_update": "MIXED",
+    "impressions_90d": "CONFIRMED",
+    "ctr_on_page_1": "CONFIRMED"
+  },
+  "precision_metrics": {
+    "precision_at_10": 1.0,
+    "precision_at_20": 0.9,
+    "precision_at_50": 0.6,
+    "precision_at_100": 0.49,
+    "lift_at_10": 1.84,
+    "lift_at_20": 1.66
+  },
+  "flagged_rows_count": 17,
+  "ranked_csv": "work/outputs/baseline_action_score.csv"
+}
