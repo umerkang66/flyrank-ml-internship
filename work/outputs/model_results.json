@@ -1,0 +1,51 @@
+{
+  "test_rows": 4723,
+  "test_clients": 6,
+  "test_base_rate": 0.6172,
+  "comparison": {
+    "Week 4 Baseline Rule": {
+      "Precision@10": 0.5,
+      "Precision@20": 0.65,
+      "Precision@50": 0.6,
+      "Precision@100": 0.65,
+      "ROC-AUC": 0.5001715265866209,
+      "Avg Precision": 0.6173237857584631,
+      "Brier Score": 0.6171924624179547,
+      "Lift@20 vs Base": 1.0531560891938252,
+      "Lift@50 vs Base": 0.9721440823327616
+    },
+    "Logistic Regression": {
+      "Precision@10": 0.6,
+      "Precision@20": 0.5,
+      "Precision@50": 0.7,
+      "Precision@100": 0.67,
+      "ROC-AUC": 0.7176922843394709,
+      "Avg Precision": 0.7440462195986364,
+      "Brier Score": 0.21452391214691413,
+      "Lift@20 vs Base": 0.8101200686106347,
+      "Lift@50 vs Base": 1.1341680960548886
+    },
+    "Decision Tree": {
+      "Precision@10": 0.6,
+      "Precision@20": 0.45,
+      "Precision@50": 0.48,
+      "Precision@100": 0.61,
+      "ROC-AUC": 0.6758057385509798,
+      "Avg Precision": 0.7118001522485023,
+      "Brier Score": 0.22268022664007445,
+      "Lift@20 vs Base": 0.7291080617495712,
+      "Lift@50 vs Base": 0.7777152658662093
+    },
+    "Random Forest": {
+      "Precision@10": 0.8,
+      "Precision@20": 0.9,
+      "Precision@50": 0.9,
+      "Precision@100": 0.88,
+      "ROC-AUC": 0.6757110573930996,
+      "Avg Precision": 0.7309835633009103,
+      "Brier Score": 0.21756528708199047,
+      "Lift@20 vs Base": 1.4582161234991424,
+      "Lift@50 vs Base": 1.4582161234991424
+    }
+  }
+}
